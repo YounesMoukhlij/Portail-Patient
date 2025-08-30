@@ -31,7 +31,7 @@ function Section({ title, items, icon }: { title: string; items: RendezVous[]; i
             {items.map((rdv, i) => (
               <li key={i} className="text-gray-700 dark:text-gray-100 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md rounded-lg px-1 sm:px-2 py-1 shadow-sm transition-transform duration-300 hover:scale-[1.03] flex flex-col sm:flex-row items-center justify-between">
                 <span className="font-semibold">{rdv.titre || rdv.type || 'Rendez-vous'}</span>
-                <span className="ml-2 text-xs text-gray-400">{rdv.date ? new Date(rdv.date).toLocaleDateString() : ''}</span>
+                <span className="ml-2 text-xs text-gray-400">{rdv.date ? new Date().toLocaleDateString() : ''}</span>
                 {rdv.statut && <span className="ml-2 text-xs text-emerald-600 font-bold">{rdv.statut}</span>}
               </li>
             ))}
