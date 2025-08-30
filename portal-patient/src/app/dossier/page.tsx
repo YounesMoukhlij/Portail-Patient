@@ -1,6 +1,5 @@
 'use client';
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+
 import dossier from "../../data/dossier.json";
 
 import { FaNotesMedical, FaAllergies, FaPills } from "react-icons/fa";

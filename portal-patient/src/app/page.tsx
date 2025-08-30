@@ -1,5 +1,4 @@
-import Header from "./../components/Header";
-import Footer from "./../components/Footer";
+
 import AppointmentCard from "./../components/AppointmentCard";
 import HealthTipCard from "./../components/HealthTipCard";
 import rendezvous from "./../data/rendezvous.json";

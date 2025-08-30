@@ -1,10 +1,4 @@
 "use client";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import AppointmentCard from "../../components/AppointmentCard";
-import FilterTabs from "../../components/FilterTabs";
-
-import { useState } from "react";
 
 const TABS = ["Tous", "À venir", "Passés"];
 

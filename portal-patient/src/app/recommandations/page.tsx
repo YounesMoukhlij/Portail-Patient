@@ -1,8 +1,5 @@
 "use client";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import FilterTabs from "../../components/FilterTabs";
-import HealthTipCard from "../../components/HealthTipCard";
+
 
 import { FaLightbulb } from "react-icons/fa";
 import recommandations from "../../data/recommandations.json";
