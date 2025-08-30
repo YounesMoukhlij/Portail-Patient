@@ -3,15 +3,16 @@
 import dossier from "../../data/dossier.json";
 
 import { FaNotesMedical, FaAllergies, FaPills } from "react-icons/fa";
+import Card from "../../components/Card";
 
 function Section({ title, items, icon, badgeColor = "bg-emerald-100 text-emerald-700" }: { title: string; items: string[]; icon: React.ReactNode; badgeColor?: string }) {
   return (
     <section className="flex flex-col items-center justify-start w-full md:h-[90%] animate-fade-in">
-  <div className="relative w-full max-w-full sm:max-w-sm md:max-w-full h-full bg-gradient-to-br from-emerald-50/90 via-white/90 to-teal-100/80 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-emerald-100 hover:border-emerald-400/80 hover:shadow-emerald-200/40 transition-all flex flex-col items-center pt-6 sm:pt-10 pb-2 sm:pb-4 px-1 sm:px-2 group">
-  <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-10">
+      <Card className="relative pt-6 sm:pt-10 pb-2 sm:pb-4 px-1 sm:px-2 group">
+        <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-10">
           <span className="text-emerald-500 text-2xl">{icon}</span>
         </div>
-  <h2 className="mt-6 mb-2 text-lg font-bold text-emerald-800 text-center group-hover:text-emerald-700 transition-colors flex items-center justify-center gap-2">
+        <h2 className="mt-6 mb-2 text-lg font-bold text-emerald-800 text-center group-hover:text-emerald-700 transition-colors flex items-center justify-center gap-2">
           {title}
           <span className={`ml-2 px-2 py-0.5 rounded-full text-xs font-semibold ${badgeColor}`}>{items.length} {items.length === 1 ? "élément" : "éléments"}</span>
         </h2>
@@ -27,7 +28,7 @@ function Section({ title, items, icon, badgeColor = "bg-emerald-100 text-emerald
             ))}
           </ul>
         )}
-      </div>
+      </Card>
     </section>
   );
 }
