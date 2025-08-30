@@ -56,19 +56,8 @@ export default function RecommandationsPage() {
         </div>
       </main>
 
-      {/* Animations */}
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: none; }
-        }
-        .animate-fade-in { animation: fade-in 0.7s both; }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-8px); }
-        }
-        .animate-bounce { animation: bounce 1.2s infinite; }
-      `}</style>
+
+
     </div>
   );
 }

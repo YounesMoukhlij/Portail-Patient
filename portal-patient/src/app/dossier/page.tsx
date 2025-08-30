@@ -20,7 +20,7 @@ function Section({ title, items, icon, badgeColor = "bg-emerald-100 text-emerald
         ) : (
           <ul className="flex flex-col gap-1 sm:gap-2 w-full text-xs sm:text-sm">
             {items.map((item, i) => (
-              <li key={i} className="text-gray-700 bg-white/60 backdrop-blur-md rounded-lg px-1 sm:px-2 py-1 shadow-sm transition-transform duration-300 hover:scale-[1.03] flex items-center justify-between">
+              <li key={i} className="text-gray-700 bg-white/60 backdrop-blur-md rounded-lg px-1 sm:px-2 py-1 shadow-sm transition-transform duration-800 hover:scale-[1.03] flex items-center justify-between">
                 <span>{item}</span>
                 <span className="ml-2 text-xs text-gray-400">{new Date().toLocaleDateString()}</span>
               </li>
@@ -50,19 +50,7 @@ export default function Dossier()
 
       </main>
 
-      {/* Animations */}
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: none; }
-        }
-        .animate-fade-in { animation: fade-in 0.7s both; }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-8px); }
-        }
-        .animate-bounce { animation: bounce 1.2s infinite; }
-      `}</style>
+  {/* Animations removed, only Tailwind animate classes remain */}
     </div>
   );
 }

@@ -9,11 +9,11 @@ import "./globals.css";
 
 const patient = {
   prenom: "Younes",
-  nom: "Moukhlij",
-  age: 32,
+  nom: "Younan",
+  age: 25,
   genre: "Homme",
   mutuelle: "MGEN",
-  medecinTraitant: "Dr. Dupont",
+  medecinTraitant: "Dr. Moukhlij",
 };
 
 const dernierRdv =
@@ -77,6 +77,9 @@ export default function Home() {
               <div className="w-full px-2">
                 <AppointmentCard appointment={dernierRdv} />
               </div>
+              <div className="w-full px-2">
+                <AppointmentCard appointment={dernierRdv} />
+              </div>
             </div>
 
             <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto md:h-full py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
@@ -94,19 +97,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      {/* Animations */}
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: none; }
-        }
-        .animate-fade-in { animation: fade-in 0.7s both; }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-8px); }
-        }
-        .animate-bounce { animation: bounce 1.2s infinite; }
-      `}</style>
+  {/* Animations removed, only Tailwind animate classes remain */}
     </div>
   );
 }

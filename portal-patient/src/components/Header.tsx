@@ -53,35 +53,35 @@ export default function Header() {
 
           <Link
             href="/"
-            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
             onClick={() => setOpen(false)}
           >
             Accueil
-            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
           </Link>
           <Link
             href="/rendez-vous"
-            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
             onClick={() => setOpen(false)}
           >
             Rendez-vous
-            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
           </Link>
           <Link
             href="/dossier"
-            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
             onClick={() => setOpen(false)}
           >
             Dossier médical
-            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
           </Link>
           <Link
             href="/recommandations"
-            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
             onClick={() => setOpen(false)}
           >
             Recommandations
-            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
           </Link>
 
 
@@ -91,31 +91,31 @@ export default function Header() {
       <nav className="font-semibold   md:w-[50%]  hidden md:flex md:flex-row  md:translate-x-0  md:h-full md:bg-transparent md:rounded-none md:shadow-none md:justify-evenly  md:gap-4 md:items-center ">
         <Link
           href="/"
-          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
         >
           Accueil
-          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
         </Link>
         <Link
           href="/rendez-vous"
-          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
         >
           Rendez-vous
-          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
         </Link>
         <Link
           href="/dossier"
-          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
         >
           Dossier médical
-          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
         </Link>
         <Link
           href="/recommandations"
-          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-400 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
         >
           Recommandations
-          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200" />
+          <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2/3 h-0.5 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-400" />
         </Link>
       </nav>
 
