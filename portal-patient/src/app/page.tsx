@@ -34,7 +34,7 @@ export default function Home() {
         </h1>
         <div className="w-full h-[90%] p-1 sm:p-5 flex gap-1 sm:gap-6 flex-col items-center justify-center">
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 gap-1 sm:gap-6 items-center justify-center">
-            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
+            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto md:h-full py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-1">
                 <FaUserMd className="text-emerald-500 text-lg sm:text-xl md:text-2xl" />
               </div>
@@ -66,7 +66,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
+            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto md:h-full py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-10">
                 <FaRegCalendarCheck className="text-emerald-500 text-lg sm:text-xl md:text-2xl" />
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
+            <div className="bg-white/90 rounded-2xl shadow-lg flex flex-col items-center border border-emerald-100 w-full max-w-full sm:max-w-sm md:max-w-full min-h-0 h-auto md:h-full py-2 sm:py-4 md:py-5 px-1 relative animate-fade-in">
               <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-10">
                 <FaHeartbeat className="text-emerald-500 text-lg sm:text-xl md:text-2xl" />
               </div>
