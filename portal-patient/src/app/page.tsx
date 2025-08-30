@@ -1,4 +1,3 @@
-
 import AppointmentCard from "./../components/AppointmentCard";
 import HealthTipCard from "./../components/HealthTipCard";
 import rendezvous from "./../data/rendezvous.json";
