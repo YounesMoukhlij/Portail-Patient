@@ -11,7 +11,7 @@ export default function Header() {
   const { dark, setDark } = useDarkMode();
 
   return (
-    <header className="bg-gradient-to-r h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80 shadow-xl backdrop-blur-3xl text-emerald-900 dark:bg-gradient-to-r dark:from-gray-900 dark:via-emerald-900 dark:to-teal-900 dark:text-emerald-100 gap-1 sm:gap-4 items-center justify-center relative flex flex-row z-[999]">
+    <header className="bg-gradient-to-r  h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80  shadow-xl backdrop-blur-3xl text-emerald-900 gap-1 sm:gap-4 items-center justify-center relative flex flex-row  z-[999]">
       <div className="flex justify-start  pl-5 gap-2  w-full md:w-[43%]    items-center ">
         <Link href="/" aria-label="Accueil" className=" flex justify-center gap-2    items-center ">
           <div className="rounded-full shadow-md flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
@@ -37,16 +37,20 @@ export default function Header() {
         <FiMenu size={28} className="text-emerald-800" />
       </button>
 
-      {/* Nav for mobile: open state */}
+
       {open && (
-        <nav className="font-semibold transition-transform duration-300 fixed top-0 right-0 h-screen w-[40vw] min-w-[200px] max-w-[350px] border-2 bg-emerald-50/95 rounded-l-2xl shadow-2xl z-[9999] flex flex-col justify-center gap-10 animate-fade-in">
+        <nav
+          className="font-semibold transition-transform duration-300 fixed top-0 right-0 w-[40vw] min-w-[200px] max-w-[350px] bg-emerald-50/95 rounded-l-2xl shadow-2xl z-[9999] flex flex-col justify-center gap-10 animate-fade-in min-h-[600px] max-h-[900px]"
+          style={{ height: '100dvh' }}
+        >
           <button
-            className="absolute left-3 top-3 z-50 rounded-full hover:bg-emerald-100 transition-colors"
+            className="absolute top-4 left-2 right-0 z-50 rounded-full p-2 hover:bg-emerald-100 transition-colors"
             onClick={() => setOpen(false)}
             aria-label="Fermer le menu"
           >
-            <FiX size={26} className="text-emerald-800" />
+            <FiX size={22} className="text-emerald-800" />
           </button>
+
           <Link
             href="/"
             className="relative group cursor-pointer border-none rounded-lg block px-3 py-1.5 hover:bg-emerald-100/60 hover:text-emerald-900 transition-all duration-200 text-xs sm:text-base focus:outline-none focus:ring-2 focus:ring-emerald-300"
