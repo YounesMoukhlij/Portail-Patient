@@ -1,0 +1,5 @@
+[
+  { "id": 1, "categorie": "Nutrition", "message": "Buvez 1,5L d’eau par jour" },
+  { "id": 2, "categorie": "Activité physique", "message": "Faites 30 minutes de marche" },
+  { "id": 3, "categorie": "Sommeil", "message": "Dormez au moins 7h par nuit" }
+]

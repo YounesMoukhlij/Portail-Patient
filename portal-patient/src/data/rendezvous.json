@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "medecin": "Dr. Dupont",
+    "specialite": "Cardiologie",
+    "date": "2025-09-10",
+    "lieu": "Clinique Centrale",
+    "statut": "à venir"
+  },
+  {
+    "id": 2,
+    "medecin": "Dr. Martin",
+    "specialite": "Généraliste",
+    "date": "2025-07-05",
+    "lieu": "Cabinet Santé Plus",
+    "statut": "passé"
+  }
+]
