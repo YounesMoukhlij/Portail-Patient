@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="w-full h-full">
+  <html lang="fr" className="w-full h-full">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,10 +41,10 @@ export default function RootLayout({
         <meta property="og:image" content="/doctor1.png" />
         <meta property="og:locale" content="fr_FR" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}  h-full w-full`}>
+  <body className={`${geistSans.variable} ${geistMono.variable} h-full w-full bg-white text-emerald-900 dark:bg-gray-900 dark:text-emerald-100`}>
         <DarkModeProvider>
           <Header/>
-          <div className="w-full h-[78%] md:h-[80%]">
+          <div className="w-full h-[78%] md:h-[80%] bg-white dark:bg-gray-900">
             {children}
           </div>
           <Footer/>

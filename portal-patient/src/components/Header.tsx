@@ -11,7 +11,7 @@ export default function Header() {
   const { dark, setDark } = useDarkMode();
 
   return (
-    <header className="bg-gradient-to-r  h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80  shadow-xl backdrop-blur-3xl text-emerald-900 gap-1 sm:gap-4 items-center justify-center relative flex flex-row  z-[999]">
+    <header className="bg-gradient-to-r h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80 shadow-xl backdrop-blur-3xl text-emerald-900 dark:bg-gradient-to-r dark:from-gray-900 dark:via-emerald-900 dark:to-teal-900 dark:text-emerald-100 gap-1 sm:gap-4 items-center justify-center relative flex flex-row z-[999]">
       <div className="flex justify-start  pl-5 gap-2  w-full md:w-[43%]    items-center ">
         <Link href="/" aria-label="Accueil" className=" flex justify-center gap-2    items-center ">
           <div className="rounded-full shadow-md flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">

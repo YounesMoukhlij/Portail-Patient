@@ -40,7 +40,7 @@ export default function RecommandationsPage() {
   const toutes = recommandations;
   const categories = Array.from(new Set(recommandations.map(r => r.categorie)));
   return (
-    <div className="h-full flex bg-[url('/bg3.jpg')] bg-cover bg-no-repeat bg-center flex-col bg-gradient-to-br from-blue-100 via-white to-blue-300 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 animate-gradient-slow relative overflow-scroll">
+    <div className="h-full flex bg-[url('/bg3.jpg')] bg-cover bg-no-repeat bg-center flex-col bg-gradient-to-br from-blue-100 via-white to-blue-300 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 animate-gradient-slow relative overflow-scroll bg-white text-emerald-900 dark:bg-gray-900 dark:text-emerald-100">
       <main className="flex-1 bg-black/30 w-full h-[80%] flex flex-col items-center justify-center overflow-scroll">
         <h1 className="text-2xl md:pt-5 sm:text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg animate-fade-in text-center w-full h-[60px] flex items-center justify-center">
           Recommandations santé
