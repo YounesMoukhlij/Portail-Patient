@@ -4,7 +4,13 @@
 import { FaLightbulb } from "react-icons/fa";
 import recommandations from "../../data/recommandations.json";
 
-function Section({ title, items, icon }: { title: string; items: any[]; icon: React.ReactNode }) {
+type Recommandation = {
+  titre?: string;
+  categorie?: string;
+  date?: string;
+};
+
+function Section({ title, items, icon }: { title: string; items: Recommandation[]; icon: React.ReactNode }) {
   return (
     <section className="flex flex-col items-center justify-start w-full md:h-[90%] animate-fade-in">
   <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-full h-full bg-gradient-to-br from-emerald-50/90 via-white/90 to-teal-100/80 dark:from-emerald-900/80 dark:via-gray-900/80 dark:to-emerald-800/80 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-emerald-100 dark:border-emerald-900/60 hover:border-emerald-400/80 hover:shadow-emerald-200/40 transition-all flex flex-col items-center pt-6 sm:pt-10 pb-2 sm:pb-4 px-1 sm:px-2 group">
