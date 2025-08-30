@@ -13,7 +13,7 @@ type Recommandation = {
 function Section({ title, items, icon }: { title: string; items: Recommandation[]; icon: React.ReactNode }) {
   return (
     <section className="flex flex-col items-center justify-start w-full md:h-[90%] animate-fade-in">
-  <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-full h-full bg-gradient-to-br from-emerald-50/90 via-white/90 to-teal-100/80 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-emerald-100 hover:border-emerald-400/80 hover:shadow-emerald-200/40 transition-all flex flex-col items-center pt-6 sm:pt-10 pb-2 sm:pb-4 px-1 sm:px-2 group">
+  <div className="relative w-full max-w-full sm:max-w-sm md:max-w-full h-full bg-gradient-to-br from-emerald-50/90 via-white/90 to-teal-100/80 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-emerald-100 hover:border-emerald-400/80 hover:shadow-emerald-200/40 transition-all flex flex-col items-center pt-6 sm:pt-10 pb-2 sm:pb-4 px-1 sm:px-2 group">
   <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full shadow-lg border-4 border-white z-10">
           <span className="text-emerald-500 text-2xl">{icon}</span>
         </div>
