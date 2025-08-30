@@ -10,7 +10,7 @@ export default function AppointmentCard({ appointment }: { appointment: Appointm
   const isPast = appointment.statut === "passé";
   return (
     <div
-      className={`rounded-lg border p-4 mb-3 shadow-sm flex flex-col gap-1 bg-white dark:bg-gray-900 ${
+  className={`rounded-lg border p-4 mb-3 shadow-sm flex flex-col gap-1 bg-white ${
         isPast ? "opacity-60" : ""
       }`}
     >

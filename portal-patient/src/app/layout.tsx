@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./../components/Header";
 import Footer from "./../components/Footer";
-import { DarkModeProvider } from "../context/DarkModeContext";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -41,15 +41,15 @@ export default function RootLayout({
         <meta property="og:image" content="/doctor1.png" />
         <meta property="og:locale" content="fr_FR" />
       </head>
-  <body className={`${geistSans.variable} ${geistMono.variable} h-full w-full bg-white text-emerald-900 dark:bg-gray-900 dark:text-emerald-100`}>
-        <DarkModeProvider>
-          <Header/>
-          <div className="w-full h-[78%] md:h-[80%] bg-white dark:bg-gray-900">
-            {children}
-          </div>
-          <Footer/>
-        </DarkModeProvider>
-      </body>
-    </html>
+  <body className={`${geistSans.variable} ${geistMono.variable} h-full w-full bg-white text-emerald-900`}>
+        <Header/>
+        <div className="w-full h-[78%] md:h-[80%] bg-white">
+          {children}
+        </div>
+        <Footer/>
+        </body>
+
+        </html>
+
   );
 }

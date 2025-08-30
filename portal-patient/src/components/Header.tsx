@@ -3,15 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import { useDarkMode } from "../context/DarkModeContext";
+
+
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const { dark, setDark } = useDarkMode();
+
 
   return (
-    <header className="bg-gradient-to-r  h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80  shadow-xl backdrop-blur-3xl text-emerald-900 gap-1 sm:gap-4 items-center justify-center relative flex flex-row  z-[999]">
+  <header className="bg-gradient-to-r h-[8%] w-full md:h-[10%] from-emerald-500/80 via-emerald-100/80 to-teal-200/80 shadow-xl backdrop-blur-3xl text-emerald-900 gap-1 sm:gap-4 items-center justify-center relative flex flex-row z-[999]">
       <div className="flex justify-start  pl-5 gap-2  w-full md:w-[43%]    items-center ">
         <Link href="/" aria-label="Accueil" className=" flex justify-center gap-2    items-center ">
           <div className="rounded-full shadow-md flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
@@ -119,17 +119,7 @@ export default function Header() {
         </Link>
       </nav>
 
-        <button
-          className=" absolute right-20 top-4 z-30 md:static w-[40px] h-[40px]   dark:bg-gray-800/80 rounded-full shadow  dark:border-gray-700 flex items-center justify-center transition-colors duration-400"
-          onClick={() => setDark(!dark)}
-          aria-label="Basculer le mode sombre"
-        >
-          {dark ? (
-            <BsFillSunFill size={30} className="p-1 text-white" />
-          ) : (
-            <BsFillMoonFill size={30} className="p-1 text-white" />
-          )}
-        </button>
+  {/* Dark mode toggle removed */}
 
       {/* Animation for fade-in */}
       <style jsx global>{`
