@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/doctor.png" />
+        <link rel="icon" href="/doctor1.png" />
         <meta name="description" content="Portail Patient - Visualisation d'un Carnet de Suivi Médical. Suivez vos rendez-vous, recommandations et informations médicales en toute sécurité." />
         <meta name="keywords" content="santé, patient, médical, rendez-vous, recommandations, dossier, portail, suivi" />
         <meta name="author" content="Younes Moukhlij" />
@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta property="og:title" content="Portail Patient - Carnet de Suivi Médical" />
         <meta property="og:description" content="Accédez à votre carnet de suivi médical, rendez-vous et conseils santé en ligne." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/doctor.png" />
+        <meta property="og:image" content="/doctor1.png" />
         <meta property="og:locale" content="fr_FR" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}  h-full w-full`}>
