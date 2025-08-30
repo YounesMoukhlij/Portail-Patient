@@ -14,7 +14,10 @@ Bienvenue sur le **Portail Patient**, une application Next.js moderne et respons
 
 ## Aperçu
 
-![Aperçu du portail](/preview.png)
+![Aperçu du portail](./portal-patient/public/preview.png)
+
+
+
 
 ## Technologies utilisées
 
