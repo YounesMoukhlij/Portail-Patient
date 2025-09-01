@@ -11,3 +11,4 @@ export default function HealthTipCard({ tip }: { tip: HealthTip }) {
     </div>
   );
 }
+
