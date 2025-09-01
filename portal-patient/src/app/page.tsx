@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import AppointmentCard from "./../components/AppointmentCard";
-import HealthTipCard from "./../components/HealthTipCard";
+import AppointmentCard from "../components/AppointmentCard";
+import HealthTipCard from "../components/HealthTipCard";
 import Card from "../components/Card";
 import rendezvous from "./../data/rendezvous.json";
 import recommandations from "./../data/recommandations.json";
@@ -13,23 +13,14 @@ const patient = {
   nom: "Younan",
   age: 25,
   genre: "Homme",
-  mutuelle: "MGEN",
+  mutuelle: "AMO",
   medecinTraitant: "Dr. Moukhlij",
 };
 
-const dernierRdv =
-  rendezvous
-    .filter((rdv) => rdv.statut === "à venir")
-    .sort(
-      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
-    )[0] || rendezvous[0];
-
-const recoJour = recommandations[0];
-
 export default function Home() {
   return (
-  <div className="h-full w-full flex flex-col items-center justify-center bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-gradient-slow relative overflow-x-hidden">
-  <main className="flex-1 bg-black/30 text-emerald-900 pt-3 md:pt-10 w-full h-full flex flex-col items-center justify-center animate-fade-in">
+    <div className="h-full w-full flex flex-col items-center justify-center bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-gradient-slow relative overflow-x-hidden">
+      <main className="flex-1 bg-black/30 text-emerald-900 pt-3 md:pt-10 w-full h-full flex flex-col items-center justify-center animate-fade-in">
         <h1 className="h-[10%] pt-3 md:pt-0 text-center flex items-center justify-center w-full text-xl sm:text-2xl md:text-4xl font-bold text-white ">
           Bienvenue, {patient.prenom} !
         </h1>
@@ -76,7 +67,7 @@ export default function Home() {
                 Prochain rendez-vous
               </h2>
               <div className="w-full px-2">
-                <AppointmentCard appointment={dernierRdv} />
+                <AppointmentCard appointment={rendezvous[0]} />
               </div>
             </Card>
 
@@ -89,13 +80,12 @@ export default function Home() {
                 Conseil santé du jour
               </h2>
               <div className="w-full px-2">
-                <HealthTipCard tip={recoJour} />
+                <HealthTipCard tip={recommandations[0]} />
               </div>
             </Card>
           </div>
         </div>
       </main>
-  {/* Animations removed, only Tailwind animate classes remain */}
     </div>
   );
 }
