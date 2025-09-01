@@ -3,8 +3,8 @@ import { FaExclamationTriangle } from "react-icons/fa";
 
 export default function NotFound() {
   return (
-    <div className="h-full w-full flex  bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center  flex-col items-center justify-center bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-gradient-slow p-2 sm:p-4">
-        <div className="w-full h-full bg-black/30">
+    <div className="h-full w-full flex  bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center  flex-col items-center justify-center  animate-gradient-slow">
+        <div className="w-full h-full bg-black/30 flex items-center justify-center">
 
       <div className="flex bg-white/80 flex-col items-center justify-center  rounded-2xl shadow-lg p-4 sm:p-8 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
         <FaExclamationTriangle className="text-emerald-500 text-5xl sm:text-6xl mb-4" />
