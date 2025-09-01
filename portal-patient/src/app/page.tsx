@@ -19,7 +19,7 @@ const patient = {
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex flex-col items-center justify-center bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center bg-gradient-to-br from-blue-100 via-white to-blue-300 animate-gradient-slow relative overflow-x-hidden">
+    <div className="h-full w-full flex flex-col items-center justify-center bg-[url('/bg2.jpg')] bg-cover bg-no-repeat bg-center  animate-gradient-slow relative overflow-x-hidden">
       <main className="flex-1 bg-black/30 text-emerald-900 pt-3 md:pt-10 w-full h-full flex flex-col items-center justify-center animate-fade-in">
         <h1 className="h-[10%] pt-3 md:pt-0 text-center flex items-center justify-center w-full text-xl sm:text-2xl md:text-4xl font-bold text-white ">
           Bienvenue, {patient.prenom} !
